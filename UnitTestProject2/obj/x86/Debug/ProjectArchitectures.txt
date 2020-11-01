@@ -1,0 +1,2 @@
+C:\Users\Dell\Desktop\לימודים\סלע\OOP\פרויקט ספריה\LibaryProject\BookLib\BookLib.csproj;x86
+C:\Users\Dell\Desktop\לימודים\סלע\OOP\פרויקט ספריה\LibaryProject\UnitTestProject2\UnitTestProject2.csproj;x86

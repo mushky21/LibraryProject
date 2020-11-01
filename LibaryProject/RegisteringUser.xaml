@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="LibaryProject.RegisteringUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibaryProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="LightGray">
+
+    <Grid Name="children">
+        <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="8,-5,0,0" Text="Welcome to registering" FontStyle="Italic" FontSize="30" FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top" Height="68"/>
+        <TextBlock x:Name="instruction" HorizontalAlignment="Left" Margin="8,43,0,0" Text="Please type all details and after press on register button." FontStyle="Italic" FontSize="20" Foreground="Red" TextWrapping="Wrap" VerticalAlignment="Top" Height="68"/>
+        <TextBlock x:Name="UsernameBl" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="5,88,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="passwordBl" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="239,88,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="OccupationBl" FontSize="15" Height="20" Width="109" HorizontalAlignment="Left" Margin="258,196,0,0" Text="TypeOccupation" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comBoxCodeOccupation" HorizontalAlignment="Left"  FontSize="15"  Height="30" Width="139" Margin="381,192,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="firstNameBl" Text="First name" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="465,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MaxLines="1"/>
+        <TextBlock x:Name="lastNameBl" Text="Last name" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="9,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MaxLines="1"/>
+        <TextBlock x:Name="phoneBl" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="251,142,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <DatePicker Name="birthDate" HorizontalAlignment="Left" Margin="550,139,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="dateBl" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="471,142,0,0" Text="BirthDate" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <TextBlock x:Name="cityBl" FontSize="15" Height="20" Width="70" HorizontalAlignment="Left" Margin="39,193,0,0" Text="City" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <Button x:Name="Sumbit" Content="Submit" Background="GreenYellow" FontStyle="Italic" HorizontalAlignment="Left" Margin="22,264,0,0" VerticalAlignment="Top" Height="38" Width="103" Click="Sumbit_Click"/>
+        <PasswordBox x:Name="Password" PlaceholderText="password" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" Margin="314,83,0,0" VerticalAlignment="Top"/>
+
+        <Canvas Name="allTextBox">
+            <TextBox x:Name="FirstName" PlaceholderText="First name" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" Margin="544,83,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="LastName" PlaceholderText="Last name" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" Margin="84,137,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="Phone"  PlaceholderText="phone" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" VerticalAlignment="Center" Canvas.Left="316" Canvas.Top="137" Margin="0,0,0,0" />
+            <TextBox x:Name="Username" PlaceholderText="username" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" Margin="83,83,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="City" PlaceholderText="city" FontSize="15" HorizontalAlignment="Left" Height="20" Width="139" MaxLength="10" VerticalAlignment="Top" Canvas.Left="86" Canvas.Top="189" Margin="0,0,0,0"/>
+
+        </Canvas>
+        <Button x:Name="Back" Background="Red" Content="Back" HorizontalAlignment="Left" Margin="162,265,0,0" Click="Back_Click" VerticalAlignment="Top" Height="36" Width="97"/>
+    </Grid>
+
+
+
+</Page>
